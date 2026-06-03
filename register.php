@@ -13,11 +13,12 @@
   <a class="logo" href="#">Planify</a>
     <div class="nav-right">
   <ul class="nav-links">
-    <li><a href="#">Acasă</a></li>
-    <li><a href="#">Despre</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="index.php">Acasă</a></li>
+    <li><a href="despre.php">Despre</a></li>
+    <li><a href="contact.php">Contact</a></li>
   </ul>
-    <a href="#" class="btn-login">Login/Register</a>
+  
+    <a href="login.php" class="btn-login">Login/Register</a>
     <div class="lang-selector">
       RO
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
