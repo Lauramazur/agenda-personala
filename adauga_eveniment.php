@@ -15,29 +15,7 @@ if (!isset($_SESSION['user'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav>
-  <a class="logo" href="#">Planify</a>
-    <div class="nav-right">
-  <ul class="nav-links">
-    <li><a href="#">Acasă</a></li>
-    <li><a href="#">Despre</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-    <a href="#" class="btn-login">Login/Register</a>
-    <div class="lang-selector">
-      RO
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-        <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <button class="icon-btn" aria-label="Dark mode">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-      </svg>
-    </button>
-  </div>
-</nav>
+<?php include 'php/navbar.php'; ?>
 
 <?php if (isset($_GET['error'])): ?>
     <div class="alert alert-error">

@@ -5,40 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planify — Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-  <a class="logo" href="#">Planify</a>
-    <div class="nav-right">
-  <ul class="nav-links">
-    <li><a href="#">Acasă</a></li>
-    <li><a href="#">Despre</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-    <a href="#" class="btn-login">Login/Register</a>
-    <div class="lang-selector">
-      RO
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-        <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <button class="icon-btn" aria-label="Dark mode">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-      </svg>
-    </button>
-    <div class="nav-actions">
-        <?php if (isset($_SESSION['user'])): ?>
-            <span class="user-greeting">Bună, <?php echo $_SESSION['user']['nume']; ?>! 👋</span>
-            <a href="logout.php" class="btn-danger">Deconectare</a>
-        <?php else: ?>
-            <a href="login.php" class="btn-outline">Login</a>
-            <a href="register.php" class="btn-primary">Register</a>
-        <?php endif; ?>
-    </div>
-    </div>
-</nav>
+
+<?php include 'php/navbar.php'; ?>
 
 <?php if (isset($_GET['error'])): ?>
     <div class="alert alert-error">
@@ -55,44 +30,59 @@
     </div>
 <?php endif; ?>
 
-<div class="page-header">
-    <h1>Contactează-ne 📬</h1>
+<!-- HERO -->
+<div class="contact-header">
+    <h1>Contactează-ne</h1>
     <p>Suntem aici să te ajutăm</p>
 </div>
 
-<div class="contact-container">
+<!-- SECTIUNEA PRINCIPALA -->
+<div class="contact-wrapper">
 
-    <div class="contact-info">
+    <!-- STANGA -->
+    <div class="contact-info-box">
         <h3>Date de contact</h3>
-        <p>📍 Chișinău, Moldova</p>
-        <p>✉️ planify@email.com</p>
-        <p>📞 +373 XX XXX XXX</p>
+
+        <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Chișinău, Moldova</span>
+        </div>
+        <div class="contact-info-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span>planify@email.com</span>
+        </div>
+        <div class="contact-info-item">
+            <i class="fa-solid fa-fax"></i>
+            <span>+373 XX XXX XXX</span>
+        </div>
+
+        <a href="#" class="social-btn">
+            <i class="fa-solid fa-earth-americas"></i>
+            Urmărește-ne pe social media
+        </a>
     </div>
 
-    <div class="auth-card">
+    <!-- DREAPTA -->
+    <div class="contact-form-box">
         <form action="php/save_data.php" method="POST">
             <input type="hidden" name="action" value="contact">
 
-            <div class="form-group">
-                <label for="nume">Nume complet *</label>
-                <input type="text" id="nume" name="nume" 
-                       placeholder="Ion Popescu" required>
+            <div class="contact-field">
+                <label>Nume complet:</label>
+                <input type="text" name="nume" placeholder="Ion Popescu" required>
             </div>
 
-            <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" 
-                       placeholder="exemplu@email.com" required>
+            <div class="contact-field">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="exemplu@email.com" required>
             </div>
 
-            <div class="form-group">
-                <label for="mesaj">Mesaj *</label>
-                <textarea id="mesaj" name="mesaj" rows="5" 
-                          placeholder="Scrie mesajul tău aici..." 
-                          required></textarea>
+            <div class="contact-field">
+                <label>Mesaj:</label>
+                <input type="text" name="mesaj" placeholder="Scrie mesajul tău aici..." required>
             </div>
 
-            <button type="submit" class="btn-primary btn-full">
+            <button type="submit" class="btn-contact">
                 Trimite mesajul
             </button>
         </form>
@@ -100,8 +90,8 @@
 
 </div>
 
-<footer class="footer">
-    <p>© 2026 Planify. Toate drepturile rezervate.</p>
+<footer>
+    <strong>© 2026 Planify.</strong> Toate drepturile rezervate.
 </footer>
 
 <script src="js/script.js"></script>

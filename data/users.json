@@ -5,5 +5,19 @@
         "email": "lauramazur38@gmail.com",
         "parola": "$2y$10$ttOVrm3k\/8.9xNPQka3KNO6hVewaLWl.uz6GDfzrAb\/C3vd5PyZY.",
         "dataInregistrare": "2026-05-30 08:06:20"
+    },
+    {
+        "id": "6a1e9e30793fd",
+        "nume": "ion",
+        "email": "ion@gmail.com",
+        "parola": "$2y$10$aRhF44d59XfYxRP5XygoleI\/WtI8tBSjnFJB5hw\/qWQNZ3GgTlHK2",
+        "dataInregistrare": "2026-06-02 11:11:12"
+    },
+    {
+        "id": "6a1fc05440fff",
+        "nume": "Laura",
+        "email": "lrsms178@gmail.com",
+        "parola": "$2y$10$8CYORQNPh\/BGoQtetQhC..9HqnnR60BKsGoeKxxWXzbXm5NB51iyO",
+        "dataInregistrare": "2026-06-03 07:49:08"
     }
 ]
