@@ -30,10 +30,9 @@
     </div>
 <?php endif; ?>
 
-<!-- HERO -->
 <div class="contact-header">
-    <h1>Contactează-ne</h1>
-    <p>Suntem aici să te ajutăm</p>
+    <h1 data-lang="contact_title">Contactează-ne</h1>
+    <p data-lang="contact_subtitle">Suntem aici să te ajutăm</p>
 </div>
 
 <!-- SECTIUNEA PRINCIPALA -->
@@ -41,7 +40,7 @@
 
     <!-- STANGA -->
     <div class="contact-info-box">
-        <h3>Date de contact</h3>
+        <h3 data-lang="contact_info_title">Date de contact</h3>
 
         <div class="contact-info-item">
             <i class="fa-solid fa-location-dot"></i>
@@ -58,31 +57,36 @@
 
         <a href="#" class="social-btn">
             <i class="fa-solid fa-earth-americas"></i>
-            Urmărește-ne pe social media
+            <span data-lang="contact_social">Urmărește-ne pe social media</span>
         </a>
     </div>
 
-    <!-- DREAPTA -->
     <div class="contact-form-box">
         <form action="php/save_data.php" method="POST">
             <input type="hidden" name="action" value="contact">
 
             <div class="contact-field">
-                <label>Nume complet:</label>
-                <input type="text" name="nume" placeholder="Ion Popescu" required>
-            </div>
+    <label data-lang="contact_name">Nume complet:</label>
+    <input type="text" name="nume" 
+           data-placeholder="contact_placeholder_name"
+           placeholder="Ion Popescu" required>
+</div>
 
-            <div class="contact-field">
-                <label>Email:</label>
-                <input type="email" name="email" placeholder="exemplu@email.com" required>
-            </div>
+<div class="contact-field">
+    <label data-lang="contact_email">Email:</label>
+    <input type="email" name="email" 
+           data-placeholder="contact_placeholder_email"
+           placeholder="exemplu@email.com" required>
+</div>
 
-            <div class="contact-field">
-                <label>Mesaj:</label>
-                <input type="text" name="mesaj" placeholder="Scrie mesajul tău aici..." required>
-            </div>
+<div class="contact-field">
+    <label data-lang="contact_message">Mesaj:</label>
+    <input type="text" name="mesaj" 
+           data-placeholder="contact_placeholder_message"
+           placeholder="Scrie mesajul tău aici..." required>
+</div>
 
-            <button type="submit" class="btn-contact">
+            <button type="submit" class="btn-contact" data-lang="contact_send">
                 Trimite mesajul
             </button>
         </form>
@@ -91,7 +95,9 @@
 </div>
 
 <footer>
-    <strong>© 2026 Planify.</strong> Toate drepturile rezervate.
+  <span data-lang="footer">
+      © 2026 Planify. Toate drepturile rezervate.
+  </span>
 </footer>
 
 <script src="js/script.js"></script>

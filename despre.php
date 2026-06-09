@@ -17,16 +17,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <?php include 'php/navbar.php'; ?>
 
 <div class="about-header">
-    <h1>Despre Planify</h1>
-    <p>O aplicație creată pentru oameni organizați</p>
+    <h1 data-lang="despre_title">Despre Planify</h1>
+    <p data-lang="despre_subtitle">O aplicație creată pentru oameni organizați</p>
 </div>
 
     <section class="about-section">
 
         <div class="about-text">
-            <h2>Ce este Planify?</h2>
+            <h2 data-lang="ce_este_title">Ce este Planify?</h2>
 
-            <p>
+            <p data-lang="ce_este_desc">
                 Planify este o aplicație web modernă destinată organizării
                 evenimentelor personale. Fie că este vorba de întâlniri,
                 termene limită sau activități personale, Planify îți oferă
@@ -38,17 +38,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
             <div class="benefit">
                 <span class="check">✓</span>
-                <p>Interfață modernă și intuitivă</p>
+                <p data-lang="benefit1">Interfață modernă și intuitivă</p>
             </div>
 
             <div class="benefit">
                 <span class="check">✓</span>
-                <p>Gestionare completă a evenimentelor</p>
+                <p data-lang="benefit2">Gestionare completă a evenimentelor</p>
             </div>
 
             <div class="benefit">
                 <span class="check">✓</span>
-                <p>Disponibil în 3 limbi</p>
+                <p data-lang="benefit3">Disponibil în 3 limbi</p>
             </div>
 
         </div>
@@ -56,7 +56,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </section>
 <section class="technologies">
 
-    <h2>Tehnologii folosite</h2>
+    <h2 data-lang="tech_title">Tehnologii folosite</h2>
 
     <div class="tech-grid">
 
@@ -83,8 +83,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 </section>
 <footer>
-  <strong>© 2026 Planify.</strong> Toate drepturile rezervate.
+  <span data-lang="footer">
+      © 2026 Planify. Toate drepturile rezervate.
+  </span>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

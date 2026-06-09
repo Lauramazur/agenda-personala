@@ -3,15 +3,15 @@
   <a class="logo" href="index.php">Planify</a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="index.php">Acasă</a></li>
-      <li><a href="despre.php">Despre</a></li>
-      <li><a href="contact.php">Contact</a></li>
+      <li><a href="index.php" data-lang="acasa">Acasă</a></li>
+      <li><a href="despre.php" data-lang="despre">Despre</a></li>
+      <li><a href="contact.php" data-lang="contact">Contact</a></li>
     </ul>
 
     <?php if (isset($_SESSION['user'])): ?>
-      <a href="logout.php" class="btn-login">Deconectare</a>
+      <a href="logout.php" class="btn-login" data-lang="logout">Deconectare</a>
     <?php else: ?>
-      <a href="login.php" class="btn-login">Login/Register</a>
+      <a href="login.php" class="btn-login" data-lang="login">Login/Register</a>
     <?php endif; ?>
 
     <div class="lang-selector">

@@ -46,35 +46,35 @@ if (!empty($filterData)) {
 
 <?php include 'php/navbar.php'; ?>
 
-<!-- DASHBOARD HEADER -->
 <div class="dash-header">
     <div class="dash-header-left">
-        <h1>Evenimentele tale 🗓️</h1>
-        <p>Gestionează și planifică activitățile tale</p>
+        <h1 data-lang="dash_title">Evenimentele tale 🗓️</h1>
+        <p data-lang="dash_subtitle">Gestionează și planifică activitățile tale</p>
     </div>
-    <a href="adauga_eveniment.php" class="btn-add">+ Adaugă eveniment</a>
+    <a href="adauga_eveniment.php" class="btn-add" data-lang="dash_add_btn">+ Adaugă eveniment</a>
 </div>
 
-<!-- FILTRE -->
 <div class="dash-filter-bar">
-    <span class="dash-filter-label">Filtrează:</span>
-    <a href="dashboard.php" class="dash-filter-btn <?php echo empty($filterCategorie) && empty($filterData) ? 'active' : ''; ?>">Toate</a>
-    <a href="dashboard.php?categorie=Personal" class="dash-filter-btn <?php echo $filterCategorie == 'Personal' ? 'active' : ''; ?>">Personal</a>
-    <a href="dashboard.php?categorie=Muncă" class="dash-filter-btn <?php echo $filterCategorie == 'Muncă' ? 'active' : ''; ?>">Muncă</a>
-    <a href="dashboard.php?categorie=Școală" class="dash-filter-btn <?php echo $filterCategorie == 'Școală' ? 'active' : ''; ?>">Școală</a>
+    <span class="dash-filter-label" data-lang="dash_filter">Filtrează:</span>
+    <a href="dashboard.php" class="dash-filter-btn <?php echo empty($filterCategorie) && empty($filterData) ? 'active' : ''; ?>" data-lang="dash_all">Toate</a>
+    <a href="dashboard.php?categorie=Personal" class="dash-filter-btn <?php echo $filterCategorie == 'Personal' ? 'active' : ''; ?>" data-lang="dash_personal">Personal</a>
+    <a href="dashboard.php?categorie=Muncă" class="dash-filter-btn <?php echo $filterCategorie == 'Muncă' ? 'active' : ''; ?>" data-lang="dash_munca">Muncă</a>
+    <a href="dashboard.php?categorie=Școală" class="dash-filter-btn <?php echo $filterCategorie == 'Școală' ? 'active' : ''; ?>" data-lang="dash_scoala">Școală</a>
 
-    <form method="GET" action="dashboard.php" style="margin-left: auto;">
+    <form method="GET" action="dashboard.php" style="margin-left: auto; display:flex; align-items:center; gap:8px;">
         <?php if (!empty($filterCategorie)): ?>
             <input type="hidden" name="categorie" value="<?php echo $filterCategorie; ?>">
         <?php endif; ?>
-        <button type="submit" class="dash-filter-btn <?php echo !empty($filterData) ? 'active' : ''; ?>" onclick="document.getElementById('datepicker').style.display='block'">
-            Filtrează dată
-        </button>
-        <input type="date" id="datepicker" name="data" value="<?php echo $filterData; ?>" onchange="this.form.submit()" style="display:none; position:absolute;">
+        <input type="date" name="data" value="<?php echo $filterData; ?>"
+               class="dash-filter-btn" style="cursor:pointer;"
+               onchange="this.form.submit()">
+        <?php if (!empty($filterData)): ?>
+            <a href="dashboard.php<?php echo !empty($filterCategorie) ? '?categorie='.$filterCategorie : ''; ?>"
+               class="dash-filter-btn" style="color: red; text-decoration:none;">✕</a>
+        <?php endif; ?>
     </form>
 </div>
 
-<!-- MESAJE -->
 <?php if (isset($_GET['success'])): ?>
     <div class="alert alert-success" style="margin: 16px 40px;">
         <?php
@@ -85,12 +85,11 @@ if (!empty($filterData)) {
     </div>
 <?php endif; ?>
 
-<!-- GRID EVENIMENTE -->
 <div class="dash-events-grid">
     <?php if (empty($userEvents)): ?>
         <div class="no-events">
-            <p>Nu ai niciun eveniment <?php echo !empty($filterCategorie) ? 'în categoria "'.$filterCategorie.'"' : ''; ?>.</p>
-            <a href="adauga_eveniment.php" class="btn-add">+ Adaugă primul eveniment</a>
+            <p data-lang="dash_no_events">Nu ai niciun eveniment.</p>
+            <a href="adauga_eveniment.php" class="btn-add" data-lang="dash_add_btn">+ Adaugă primul eveniment</a>
         </div>
     <?php else: ?>
         <?php foreach ($userEvents as $event): ?>
@@ -120,7 +119,7 @@ if (!empty($filterData)) {
 </div>
 
 <footer>
-    <strong>© 2026 Planify.</strong> Toate drepturile rezervate.
+    <span data-lang="footer">© 2026 Planify. Toate drepturile rezervate.</span>
 </footer>
 
 <script src="js/script.js"></script>

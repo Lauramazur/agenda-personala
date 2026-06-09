@@ -20,6 +20,9 @@ body {
   color: var(--text);
   background: var(--white);
   overflow-x: hidden;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -273,6 +276,7 @@ footer {
   background: #1E1E2E;
   color: #FFFFFF;
   text-align: center;
+   margin-top: auto;
   padding: 22px 60px;
   font-size: 0.85rem;
   font-family: 'DM Sans', sans-serif;
@@ -887,7 +891,6 @@ footer strong { color: var(--white); }
 .btn-contact:hover {
     opacity: 0.9;
 }
-/* HERO DESPRE */
 
 .about-header{
     text-align:center;
@@ -905,7 +908,6 @@ footer strong { color: var(--white); }
     color:#555;
 }
 
-/* ABOUT SECTION */
 
 .about-section{
     max-width:1100px;
@@ -1020,7 +1022,7 @@ footer strong { color: var(--white); }
 .orange{
     border:2px solid #f2b04f;
 }
-/* ===== PROFIL ===== */
+
 .profile-section {
     display: flex;
     justify-content: center;
@@ -1092,4 +1094,234 @@ footer strong { color: var(--white); }
     font-size: 14px;
     font-weight: 600;
     color: var(--text-primary);
+}
+/* ===== DARK MODE ===== */
+body.dark {
+    background: #13131F;
+    color: #EAEAF5;
+}
+
+body.dark nav {
+    background: #1E1E2E;
+    box-shadow: 0px 1px 8px rgba(255,255,255,0.04);
+}
+
+body.dark .nav-links a {
+    color: #8B8BA0;
+}
+
+body.dark .auth-card,
+body.dark .dash-event-card,
+body.dark .contact-form-box,
+body.dark .profile-card,
+body.dark .check-list {
+    background: #1E1E2E;
+    border-color: #2E2E42;
+}
+
+body.dark .dash-header {
+    background: #1A1A2E;
+}
+
+body.dark .dash-filter-bar {
+    background: #1E1E2E;
+    border-color: #2E2E42;
+}
+
+body.dark .dash-filter-btn {
+    color: #EAEAF5;
+    border-color: #2E2E42;
+}
+
+body.dark .about-header,
+body.dark .contact-header,
+body.dark .page-header {
+    background: #1A1A2E;
+}
+
+body.dark .profile-info-item {
+    background: #13131F;
+    border-color: #2E2E42;
+}
+
+body.dark .tech-card {
+    background: #1E1E2E;
+    color: #EAEAF5;
+}
+
+body.dark footer {
+    background: #0D0D1A;
+}
+
+body.dark .form-group input,
+body.dark .form-group select,
+body.dark .form-group textarea,
+body.dark .contact-field {
+    background: #1E1E2E;
+    border-color: #2E2E42;
+    color: #EAEAF5;
+}
+
+body.dark .contact-field input {
+    background: transparent;
+    color: #EAEAF5;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark span,
+body.dark a,
+body.dark li {
+    color: #EAEAF5;
+}
+
+body.dark .nav-links a {
+    color: #8B8BA0;
+}
+
+body.dark .btn-login {
+    color: #EAEAF5;
+    border-color: #EAEAF5;
+}
+
+body.dark .hero-title {
+    color: #EAEAF5;
+}
+
+body.dark .hero-title span {
+    color: var(--primary);
+}
+
+body.dark .feature-card {
+    background: #1E1E2E;
+    border-color: #2E2E42;
+}
+
+body.dark .hero-visual {
+    background: #1E1E2E;
+}
+
+body.dark .event-card {
+    background: #13131F;
+    color: #EAEAF5;
+}
+
+body.dark .why-section {
+    background: #1A1A2E;
+}
+
+body.dark .btn-outline {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+body.dark .lang-selector {
+    color: #EAEAF5;
+}
+body.dark .icon-btn {
+    color: #EAEAF5;
+    stroke: #EAEAF5;
+}
+
+body.dark .icon-btn svg {
+    stroke: #EAEAF5;
+}
+body.dark .benefits-card {
+    background: #2E2E42;
+}
+
+body.dark .benefits-card p {
+    color: #EAEAF5;
+}
+
+body.dark .benefits-card .chek {
+    color: var(--primary);
+}
+body.dark .contact-form-box {
+    background:#13131F;
+    
+}
+
+body.dark .dash-badge-personal { 
+    background: #2E2A5E; 
+    color: #A78BFA; 
+    border-color: #A78BFA; 
+}
+
+body.dark .dash-badge-munca { 
+    background: #1A3A2A; 
+    color: #4CAF7D; 
+    border-color: #4CAF7D; 
+}
+
+body.dark .dash-badge-scoala { 
+    background: #3A2A0A; 
+    color: #F5A623; 
+    border-color: #F5A623; 
+}
+
+body.dark .dash-badge-altele { 
+    background: #2E2E42; 
+    color: #8B8BA0; 
+    border-color: #8B8BA0; 
+}
+
+body.dark .dash-card-top h3,
+body.dark .dash-description,
+body.dark .dash-card-info span {
+    color: #EAEAF5;
+}
+
+body.dark .dash-filter-btn {
+    color: #EAEAF5;
+    border-color: #3E3E52;
+}
+
+body.dark .dash-filter-bar {
+    background: #1E1E2E;
+    border-color: #2E2E42;
+}
+body.dark input[type="date"] {
+    background: #1E1E2E;
+    color: #EAEAF5;
+    border-color: #3E3E52;
+    color-scheme: dark;
+}
+body.dark .benefits-card {
+    background: #2E2E42;
+}
+
+body.dark .check {
+    background: #3E3E52;
+    color: var(--primary);
+    border-color: #4E4E62;
+}
+
+body.dark .benefit p {
+    color: #EAEAF5;
+}
+/* ===== DROPDOWN LIMBA ===== */
+#lang-dropdown {
+    position: absolute;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.10);
+    z-index: 999;
+    overflow: hidden;
+    min-width: 80px;
+}
+
+body.dark #lang-dropdown {
+    background: #1E1E2E;
+    border-color: #2E2E42;
+}
+
+body.dark #lang-dropdown div {
+    color: #EAEAF5;
+}
+
+body.dark #lang-dropdown div:hover {
+    background: #2E2E42 !important;
 }
