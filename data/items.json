@@ -7,5 +7,32 @@
         "ora": "10:00",
         "categorie": "Munc\u0103",
         "descriere": "gfd"
+    },
+    {
+        "id": "6a2482da3ffea",
+        "userId": "6a1a7e5c0b2e5",
+        "titlu": "zi de nastere",
+        "data": "2026-07-02",
+        "ora": "18:00",
+        "categorie": "Personal",
+        "descriere": ""
+    },
+    {
+        "id": "6a24831738fc8",
+        "userId": "6a1a7e5c0b2e5",
+        "titlu": "sdefrgbhn",
+        "data": "2026-09-03",
+        "ora": "09:01",
+        "categorie": "Altele",
+        "descriere": ""
+    },
+    {
+        "id": "6a24833913634",
+        "userId": "6a1a7e5c0b2e5",
+        "titlu": "123",
+        "data": "2026-07-20",
+        "ora": "10:00",
+        "categorie": "Munc\u0103",
+        "descriere": ""
     }
 ]
