@@ -1,19 +1,10 @@
 [
     {
-        "id": "6a1a8211901b3",
-        "userId": "6a1a7e5c0b2e5",
-        "titlu": "wertyui",
-        "data": "2026-02-01",
-        "ora": "10:00",
-        "categorie": "Munc\u0103",
-        "descriere": "gfd"
-    },
-    {
         "id": "6a2482da3ffea",
         "userId": "6a1a7e5c0b2e5",
         "titlu": "zi de nastere",
         "data": "2026-07-02",
-        "ora": "18:00",
+        "ora": "03:02",
         "categorie": "Personal",
         "descriere": ""
     },
@@ -33,6 +24,15 @@
         "data": "2026-07-20",
         "ora": "10:00",
         "categorie": "Munc\u0103",
+        "descriere": ""
+    },
+    {
+        "id": "6a28580a2ec74",
+        "userId": "6a28556d4264e",
+        "titlu": "zi de nastere",
+        "data": "2026-09-01",
+        "ora": "18:00",
+        "categorie": "Personal",
         "descriere": ""
     }
 ]

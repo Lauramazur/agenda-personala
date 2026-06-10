@@ -19,5 +19,47 @@
         "email": "lrsms178@gmail.com",
         "parola": "$2y$10$8CYORQNPh\/BGoQtetQhC..9HqnnR60BKsGoeKxxWXzbXm5NB51iyO",
         "dataInregistrare": "2026-06-03 07:49:08"
+    },
+    {
+        "id": "6a28341a6e23d",
+        "nume": "Raisa",
+        "email": "raaisa@gmail.com",
+        "parola": "$2y$10$mO\/t56rPnopgvgzHDn0J0.1T.9QA9m\/PQJwffrcwzKTQrABk4GD.K",
+        "dataInregistrare": "2026-06-09 17:41:14"
+    },
+    {
+        "id": "6a2834aa5f346",
+        "nume": "Andreea",
+        "email": "andreea@gmail.com",
+        "parola": "$2y$10$aopVZ.nHvAJkixriv3mKh.ZQWJeR5SQJ1Vy4RLStHf2sCdnRCJoIC",
+        "dataInregistrare": "2026-06-09 17:43:38"
+    },
+    {
+        "id": "6a28350c6b4cd",
+        "nume": "ana",
+        "email": "ana@gmail.com",
+        "parola": "$2y$10$UI56PcKaELpRWEirwPNnsuALvEEQPiG.p\/HEZeXEne3ZOAqyzarnS",
+        "dataInregistrare": "2026-06-09 17:45:16"
+    },
+    {
+        "id": "6a283552e2e0a",
+        "nume": "Ala",
+        "email": "ala@gmail.com",
+        "parola": "$2y$10$.xA2NvyYuUM7y9KaqJdMRuJVpPCHYIbbD9riUmbXRt2gC0wWZgR06",
+        "dataInregistrare": "2026-06-09 17:46:26"
+    },
+    {
+        "id": "6a2839a9553b4",
+        "nume": "Lia",
+        "email": "lia@gmail.com",
+        "parola": "$2y$10$4.Yabbxz7.VY3yD\/EzhMluLBLkfredLm6qQSBVztLDrRU4avQCc\/2",
+        "dataInregistrare": "2026-06-09 18:04:57"
+    },
+    {
+        "id": "6a2859770ff54",
+        "nume": "Alisa",
+        "email": "alisa@gmail.com",
+        "parola": "$2y$10$TEaMwu6eEv9ZTTaK8jpJCuTuDhX7IW9tNpx0Enp5TbBPYHTpMH\/cW",
+        "dataInregistrare": "2026-06-09 20:20:39"
     }
 ]
